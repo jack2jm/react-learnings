@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import ClassBasedComponents from "./components/ClassBasedComponents";
+import FunctionalBasedComponent from './components/FunctionalBasedComponents';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         >
           Learn React
         </a>
+        <ClassBasedComponents />
+        <FunctionalBasedComponent />
       </header>
     </div>
   );
