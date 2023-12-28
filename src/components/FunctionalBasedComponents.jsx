@@ -11,10 +11,14 @@ function FunctionalBasedComponent(){
                         console.log('hello from parent component');
             }
 
+            const getValueFromChild = (count) => {
+                        console.log(count);
+            }
+
             return  (
                         <div>
                                     <Child />
-                                    <PropExample parentComponentHandeler={parentComponentHandeler} flag1={false} flag={true} data="data123 as prop" />
+                                    <PropExample getValueFromChild={getValueFromChild} parentComponentHandeler={parentComponentHandeler} flag1={false} flag={true} data="data123 as prop" />
                                     Functional Based Component
                         </div>
             )

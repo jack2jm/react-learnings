@@ -1,8 +1,11 @@
 import React from "react";
 
 const PropExample = (props) => {
-            const {flag, flag1, data, parentComponentHandeler} = props;
+            const {flag, flag1, data, parentComponentHandeler, getValueFromChild} = props;
             console.log(props);
+            const clickHandler = () => {
+                        getValueFromChild(5);
+            }
             return (
 
                         <div>
@@ -17,6 +20,7 @@ const PropExample = (props) => {
                                     Prop Example Component
                                     <br/>
                                     <button onClick={parentComponentHandeler}>Click</button>
+                                    <button onClick={clickHandler}>Click to pass value to parent</button>
                         </div>
             )
 }
